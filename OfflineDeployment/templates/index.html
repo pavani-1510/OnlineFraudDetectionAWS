@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Online Payment Fraud Detection</h2>
+        <form action="/predict" method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="type">Transaction Type (e.g., payment, transfer):</label>
+                <input type="text" class="form-control" name="type" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Transaction Amount:</label>
+                <input type="number" class="form-control" name="amount" step="any" required>
+            </div>
+            <div class="form-group">
+                <label for="oldbalanceOrg">Original Account Balance:</label>
+                <input type="number" class="form-control" name="oldbalanceOrg" step="any" required>
+            </div>
+            <div class="form-group">
+                <label for="newbalanceOrig">New Account Balance:</label>
+                <input type="number" class="form-control" name="newbalanceOrig" step="any" required>
+            </div>
+            <div class="form-group">
+                <label for="oldbalanceDest">Destination Account Balance:</label>
+                <input type="number" class="form-control" name="oldbalanceDest" step="any" required>
+            </div>
+            <div class="form-group">
+                <label for="newbalanceDest">New Destination Account Balance:</label>
+                <input type="number" class="form-control" name="newbalanceDest" step="any" required>
+            </div>
+            <div class="form-group">
+                <label for="isFraud">Fraud (0 for No, 1 for Yes):</label>
+                <input type="number" class="form-control" name="isFraud" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict Fraud</button>
+        </form>
+        <div class="mt-4">
+            {{ result|safe }}
+        </div>
+    </div>
+</body>
+</html>
