@@ -40,6 +40,10 @@ The dataset used consists of anonymized credit card transactions with a signific
 
 ## References
 - [IEEE Paper on Fraud Detection](https://ieeexplore.ieee.org/document/10493954)
+- [ScienceDirect Research Article](https://www.sciencedirect.com/science/article/pii/S2666827024000793)
+- [Fraud Detection with AWS SageMaker](https://aws.amazon.com/blogs/machine-learning/detect-fraudulent-transactions-using-machine-learning-with-amazon-sagemaker/)
+- [IJCRT Research Paper](https://www.ijcrt.org/papers/IJCRT2408004.pdf)
+
   
 --------------
 ## Author
@@ -51,7 +55,3 @@ The dataset used consists of anonymized credit card transactions with a signific
 © 2025 R Pavani. All rights reserved.
 
 ---
-- [ScienceDirect Research Article](https://www.sciencedirect.com/science/article/pii/S2666827024000793)
-- [Fraud Detection with AWS SageMaker](https://aws.amazon.com/blogs/machine-learning/detect-fraudulent-transactions-using-machine-learning-with-amazon-sagemaker/)
-- [IJCRT Research Paper](https://www.ijcrt.org/papers/IJCRT2408004.pdf)
-
