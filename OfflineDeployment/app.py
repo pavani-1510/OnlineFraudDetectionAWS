@@ -6,8 +6,8 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the saved model and scaler
-model = joblib.load('/home/pavani-r/Documents/VSCODE/Online Fraud Detection/fraud_detection_model.pkl')
-scaler = joblib.load('/home/pavani-r/Documents/VSCODE/Online Fraud Detection/scaler.pkl')
+model = joblib.load('fraud_detection_model.pkl')  # TODO: Set correct model path if needed
+scaler = joblib.load('scaler.pkl')  # TODO: Set correct scaler path if needed
 
 @app.route('/')
 def home():

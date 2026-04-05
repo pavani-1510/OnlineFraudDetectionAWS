@@ -20,7 +20,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import pickle
 # Load dataset
-df = pd.read_csv('/home/pavani-r/Desktop/CBAIMLS/Project/onlinefraud.csv')
+df = pd.read_csv('<REPLACE_WITH_DATASET_PATH>')  # TODO: Set dataset path
 # Import necessary libraries
 
 
